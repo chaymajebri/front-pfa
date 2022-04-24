@@ -1,0 +1,30 @@
+/* Default height for small devices */
+#intro-example {
+    height: 400px;
+  }
+  
+  /* Height for devices larger than 992px */
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 600px;
+    }
+  }
+  .navbar .active {
+      color: #ffaf53 !important;
+  }
+  
+  .navbar .nav-item {
+      margin: 0 5px;
+      padding: 0;
+  }
+  .navbar .nav-item a {
+      color: black;
+      font-weight: 300;
+  }
+  .navbar .nav-link {
+      position: relative;
+      padding: 0;
+  }
+  .navbar .navbar-toggler {
+      cursor: pointer;
+  }
