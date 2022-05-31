@@ -12,12 +12,28 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { NavbarCusComponent } from './navbar-cus/navbar-cus.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatListModule} from '@angular/material/list';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormMissionComponent } from './form-mission/form-mission.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MissionListComponent } from './mission-list/mission-list.component';
+
+
 
 @NgModule({
   declarations: [
     CustomerHomeComponent,
     SidebarComponent,
-    NavbarCusComponent
+    NavbarCusComponent,
+    DashboardComponent,
+    FormMissionComponent,
+    MissionListComponent
 
 
   ],
@@ -29,7 +45,17 @@ import { NavbarCusComponent } from './navbar-cus/navbar-cus.component';
     MatButtonModule,
     MatDividerModule,
     MatGridListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatMenuModule,
+    FlexLayoutModule,
+    MatListModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule,
+    FormsModule,
+    HttpClientModule,
+    
+  
 
   ],
   exports: [

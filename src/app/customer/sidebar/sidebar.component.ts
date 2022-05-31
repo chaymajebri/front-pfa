@@ -7,6 +7,7 @@ declare const $: any;
   styleUrls: ['./sidebar.component.scss'],
 
 })
+
 export class SidebarComponent implements OnInit {
 
 

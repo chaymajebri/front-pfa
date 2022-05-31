@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from '../shared/navbar/navbar.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomePageComponent } from './home-page.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
     path: '',
     component: HomePageComponent
   },
+
   {
     path: 'login',
     component:LoginComponent

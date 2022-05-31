@@ -1,2 +1,16 @@
 
-<app-navbar-cus></app-navbar-cus>
+<app-navbar-cus (toggleSideBarForMe)="sideBarToggler()"></app-navbar-cus>
+
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBarOpen">
+        <app-sidebar></app-sidebar>
+
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+
+
+        
+    </mat-drawer-content>
+</mat-drawer-container>
+

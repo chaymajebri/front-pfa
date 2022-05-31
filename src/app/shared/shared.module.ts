@@ -18,7 +18,8 @@ import { HomeRoutingModule } from '../home/home-routing.module';
     CommonModule,
     SharedRoutingModule,
     MdbCollapseModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedRoutingModule
     
 
   ],

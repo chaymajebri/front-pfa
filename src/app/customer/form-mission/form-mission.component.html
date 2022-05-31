@@ -1,0 +1,78 @@
+
+<div class="card" >
+  <div class="card-body">
+    <h3 class="card-title">add a mission</h3>
+
+    <div [hidden]="submitted" style="width: 400px;">
+          <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <mat-form-field class="example-full-width" >
+                <mat-label>Name</mat-label>
+                <input matInput id="title" [(ngModel)]="mission.title" name="title">
+              </mat-form-field>
+
+           </div>
+           <div class="form-group">
+            <mat-form-field class="example-full-width" >
+                <mat-label>Description</mat-label>
+                <textarea matInput    id="description" [(ngModel)]="mission.description" name="description"></textarea>
+              </mat-form-field>
+              </div>
+              <div class="form-group">
+                <mat-form-field class="example-full-width" >
+                    <mat-label>Address</mat-label>
+                    <input matInput   id="address"  [(ngModel)]="mission.address" name="address">
+                  </mat-form-field>
+                  </div>
+
+                  <div class="form-group">
+                    <mat-form-field class="example-full-width" >
+                        <mat-label>Phone number</mat-label>
+                        <input matInput    id="phoneNumber"  [(ngModel)]="mission.phoneNumber" name="phoneNumber">
+                      </mat-form-field>
+                    </div>
+
+
+                    <div class="form-group">
+                        <mat-form-field class="example-full-width" >
+                            <mat-label>Date of mission</mat-label>
+                            <input matInput    id="date"  [(ngModel)]="mission.date" name="date">
+                          </mat-form-field>
+                        </div>
+                        <div class="form-group">
+                            <mat-form-field class="example-full-width" >
+                                <mat-label>Heure of mission</mat-label>
+                                <input matInput   id="time"  [(ngModel)]="mission.time" name="time">
+                              </mat-form-field>
+                            </div>
+                            <div class="form-group">
+                                <mat-form-field class="example-full-width" >
+                                    <mat-label>Duration</mat-label>
+                                    <input matInput [(ngModel)]="mission.duration"  name="duration"  id="duration" >
+                                  </mat-form-field>
+                                </div>
+
+                                <div class="form-group">
+                                    <mat-form-field class="example-full-width" >
+                                        <mat-label>Preferences</mat-label>
+                                        <input matInput  [(ngModel)]="mission.preference"   name="preference"  id="preference" >
+                                      </mat-form-field>
+                                    </div>
+
+              <br>
+          <button type="submit" class="btn btn-primary">submit</button>
+          </form>      
+         </div>
+          <div [hidden]="!submitted">
+            <h4>You submitted successfully!</h4>
+          </div>
+          
+          </div>
+    </div>
+
+
+    <button (click)="getClient()">Click to store name</button>
+
+
+
+   
